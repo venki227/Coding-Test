@@ -1,0 +1,36 @@
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+.checkbox {
+  display: none;
+}
+
+.parent-ul {
+  width: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+.child-ul {
+  display: none;
+}
+
+.parent-ul > li {
+  float: left;
+  width: 100px;
+  background: gray;
+}
+
+.child-ul > li {
+  background: blue;
+  color: #fff;
+}
+
+.checkbox:checked ~ .child-ul {
+  display: block;
+}
